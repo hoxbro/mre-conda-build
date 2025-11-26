@@ -1,0 +1,18 @@
+
+package:
+  name: example
+  version: 0
+
+source:
+  url: ../../../dist/example-0.tar.gz
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install --no-deps -vv .
+
+requirements:
+  build:
+    - python
+    - hatchling
+  run:
+    - python
