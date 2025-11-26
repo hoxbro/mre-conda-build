@@ -14,7 +14,6 @@ python = "3.13.*"
 python-build = "*"
 conda-build = "==25.11.0"
 conda = "==25.11.0"
-libmambapy = "2.3.*"
 
 [feature.build.tasks]
 build-conda = { cmd = 'bash scripts/conda/build.sh', env = { CONDA_CHANNELS = "conda-forge" } }
