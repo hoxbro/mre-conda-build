@@ -11,7 +11,9 @@ features = ["build", "old"]
 
 [feature.build.dependencies]
 python-build = "*"
-conda-build = "*"
+pip = "*"
+conda-build = "==25.11.0"
+conda = "==25.11.0"
 
 [feature.build.tasks]
 build-conda = 'bash scripts/conda/build.sh'
